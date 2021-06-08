@@ -72,8 +72,8 @@ elif [ $1 == "predict" ]; then
       --do_lower_case \
       --data_dir=$GLUE_DATA_DIR/${TASK_NAME}/ \
       --max_seq_length=128 \
-      --per_gpu_train_batch_size=16 \
-      --per_gpu_eval_batch_size=16 \
+      --per_gpu_train_batch_size=8\
+      --per_gpu_eval_batch_size=8 \
       --learning_rate=2e-5 \
       --num_train_epochs=3.0 \
       --logging_steps=2146 \
