@@ -43,7 +43,7 @@ fi
 cd $CURRENT_DIR
 echo "Start running..."
 if [ $# == 0 ]; then
-    python run_classifier.py \
+    python run_albert_classifier.py \
       --model_type=bert \
       --model_name_or_path=$MODEL_NAME \
       --task_name=$TASK_NAME \
